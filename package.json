@@ -1,0 +1,14 @@
+{
+  "name": "media-player",
+  "version": "1.0.0",
+  "description": "A project to practice JavaScript skills.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Carlos Méndez",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
