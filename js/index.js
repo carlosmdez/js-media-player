@@ -5,7 +5,7 @@ const video = document.getElementById('main-video')
 const playButton = document.getElementById('play-button')
 const muteButton = document.getElementById('mute-button')
 
-const plugins = []
+const plugins = [new AutoPlay()]
 const player = new MediaPlayer({ el: video, plugins })
 
 playButton.onclick = () => player.togglePlay()
