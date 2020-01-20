@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2aee5;
+}
+
+.title {
+  background-color: #29ccc4;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.movie {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.comment-container {
+  width: 100%;
+  background-color: #212625;
+  color: #ffffff;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.comments {
+  padding: 15px 0;
+}

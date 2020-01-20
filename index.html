@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Media Player</title>
-</head>
-<body>
-  <main class="container">
-    <h1>Media Player</h1>
-    <video class="movie" id="main-video">
-      <source src="./assets/video/BigBuckBunny.mp4" type="video/mp4">
-    </video>
-    <button class="button" id="play-button">Play/Pause</button>
-    <button class="button" id="mute-button">Mute/Unmute</button>
-  </main>
-  <script type="module" src="./js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Media Player</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Media Player</h1>
+      <video class="movie" id="main-video">
+        <source src="./assets/video/BigBuckBunny.mp4" type="video/mp4" />
+      </video>
+      <div class="button-container">
+        <button class="button" id="play-button">Play/Pause</button>
+        <button class="button" id="mute-button">Mute/Unmute</button>
+      </div>
+      <article class="comment-container">
+        <h2>Comments</h2>
+        <p class="comments">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="comments">Fusce sit amet augue viverra est semper interdum.</p>
+        <p class="comments">Praesent quis nunc quis erat congue blandit imperdiet id felis.</p>
+        <p class="comments">Donec ullamcorper enim non urna semper, sit amet vehicula nisl accumsan.</p>
+        <p class="comments">Sed ornare urna nec turpis lobortis feugiat.</p>
+        <p class="comments">Proin sed sapien luctus, luctus sapien sed, tincidunt dui.</p>
+        <p class="comments">Sed at eros et ex vestibulum euismod et quis leo.</p>
+        <p class="comments">Sed eu magna eu neque blandit tincidunt ut et mauris.</p>
+        <p class="comments">Phasellus eu diam ac mi placerat feugiat.</p>
+      </article>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
