@@ -8,11 +8,22 @@ class AutoPause {
       threshold: this.threshold
     })
     observer.observe(player.element)
+
+    document.addEventListener('visibilitychange', this.visibilityHandler)
   }
 
   intersectionHandler = entries => {
     const entry = entries[0]
     const isVisible = entry.isIntersecting
+    if (isVisible) {
+      this.player.play()
+    } else {
+      this.player.pause()
+    }
+  }
+
+  visibilityHandler = () => {
+    const isVisible = document.visibilityState === 'visible'
     if (isVisible) {
       this.player.play()
     } else {
