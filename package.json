@@ -4,11 +4,15 @@
   "description": "A project to practice JavaScript skills.",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html"
   },
   "author": "Carlos Méndez",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
