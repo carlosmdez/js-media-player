@@ -1,12 +1,13 @@
 import MediaPlayer from './MediaPlayer'
 import AutoPause from './plugins/AutoPause'
 import AutoPlay from './plugins/AutoPlay'
+import AdsPlugin from './plugins/ads'
 
 const video = document.getElementById('main-video')
 const playButton: HTMLElement = document.getElementById('play-button')
 const muteButton: HTMLElement = document.getElementById('mute-button')
 
-const plugins = [new AutoPause(), new AutoPlay()]
+const plugins = [new AutoPause(), new AutoPlay(), new AdsPlugin()]
 const player = new MediaPlayer({ el: video, plugins })
 
 playButton.onclick = () => player.togglePlay()
